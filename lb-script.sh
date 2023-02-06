@@ -48,7 +48,7 @@ deploy_production_server() {
   echo "Creating static IP -prod, press any key to begin..."
   project_id=$(gcloud config list --format 'value(core.project)')
   read -n 1 -s
-  prod_url=$(gcloud compute addresses create --global ${static_ip}
+  prod_url=$(gcloud compute addresses create --global ${static_ip})
  
 }
 
